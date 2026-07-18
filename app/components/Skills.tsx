@@ -59,7 +59,7 @@ const Skills = () => {
       ],
     },
     {
-      title: "Backend & Infra",
+      title: "Backend",
       icon: <FaServer />,
       skills: [
         {
@@ -76,11 +76,6 @@ const Skills = () => {
           name: "PostgreSQL",
           icon: <SiPostgresql />,
           level: "Database",
-        },
-        {
-          name: "Docker",
-          icon: <SiDocker />,
-          level: "DevOps",
         },
       ],
     },
