@@ -34,16 +34,6 @@ export default function Services() {
         "Responsive Design",
       ],
     },
-    {
-      title: "Cloud & Infrastructure",
-      icon: <FaCloud />,
-      description:
-        "Architecting scalable cloud solutions. From containerized microservices to database optimization and secure deployments, I handle the complete infrastructure stack.",
-      features: [
-        "Docker & Kubernetes",
-        "Database Design"
-      ],
-    },
   ];
 
   return (

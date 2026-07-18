@@ -11,7 +11,6 @@ export default function Home() {
     "TypeScript",
     "Python",
     "FastAPI",
-    "Cloud Architecture",
   ];
 
   return (

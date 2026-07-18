@@ -148,7 +148,7 @@ export default function Contact() {
                         onChange={handleChange}
                         required
                         className="w-full px-5 py-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl text-white placeholder-slate-500 focus:outline-none focus:border-[#cf5c36]/50 focus:bg-white/10 transition-all duration-300"
-                        placeholder="John Doe"
+                        placeholder="your name"
                       />
                     </motion.div>
 
@@ -170,7 +170,7 @@ export default function Contact() {
                         onChange={handleChange}
                         required
                         className="w-full px-5 py-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl text-white placeholder-slate-500 focus:outline-none focus:border-[#cf5c36]/50 focus:bg-white/10 transition-all duration-300"
-                        placeholder="john@example.com"
+                        placeholder="name@example.com"
                       />
                     </motion.div>
                   </div>

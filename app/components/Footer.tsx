@@ -101,9 +101,8 @@ const Footer = () => {
             <p className="text-slate-400 text-sm leading-relaxed max-w-md">
               Building intelligent systems
               and modern web applications.
-              Specializing in AI agents,
-              full-stack development, and
-              cloud architecture.
+              Specializing in AI agents and
+              full-stack development.
             </p>
 
             {/* Social Links */}

@@ -16,12 +16,6 @@ export default function Career() {
       desc: "Next.js & FastAPI",
       tag: "Development",
     },
-    {
-      icon: <FaServer />,
-      title: "Cloud Native",
-      desc: "Docker & Deployment",
-      tag: "DevOps",
-    },
   ];
 
   return (

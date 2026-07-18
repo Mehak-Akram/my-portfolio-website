@@ -33,10 +33,6 @@ const About = () => {
       category: "Backend",
       items: ["Python", "FastAPI", "Node.js", "REST APIs"],
     },
-    {
-      category: "Cloud & Tools",
-      items: [ "Docker", "Git"],
-    },
   ];
 
   return (
@@ -68,7 +64,7 @@ const About = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="mt-8 text-xl text-slate-400 leading-relaxed max-w-2xl"
           >
-            I'm a full-stack web developer and AI specialist passionate about
+            I'm a full-stack web developer passionate about
             creating intelligent systems that make a difference.
           </motion.p>
         </div>
@@ -116,7 +112,7 @@ const About = () => {
               </h2>
 
               <p className="text-[#cf5c36] font-medium mb-8 text-lg">
-                Full-Stack Engineer & AI Specialist
+                Full-Stack Developer
               </p>
 
               {/* Socials */}
