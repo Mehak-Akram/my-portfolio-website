@@ -52,7 +52,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full z-[100] px-4 md:px-6 pt-6">
       {/* Premium Background Glow */}
-      <div className="absolute top-[-120px] left-1/2 -translate-x-1/2 w-[500px] h-[250px] bg-[#cf5c36]/10 blur-[120px] pointer-events-none" />
+      <div className="absolute top-[-120px] left-1/2 -translate-x-1/2 w-[500px] h-[250px] bg-[#5DEBE2]/10 blur-[120px] pointer-events-none" />
 
       <motion.div
         initial={{
@@ -68,7 +68,7 @@ export default function Navbar() {
         }}
         className={`relative max-w-7xl mx-auto transition-all duration-500 ${
           scrolled
-            ? "backdrop-blur-2xl bg-white/[0.04] border border-white/10 rounded-[28px] shadow-[0_8px_32px_rgba(0,0,0,0.25)] py-4 px-6"
+            ? "backdrop-blur-2xl bg-white border border-[#102A32]/10 rounded-[28px] shadow-[0_8px_32px_rgba(0,0,0,0.25)] py-4 px-6"
             : "py-4 px-2"
         }`}
       >
@@ -80,16 +80,16 @@ export default function Navbar() {
           >
             
 
-            <span className="hidden sm:block text-lg font-bold text-white tracking-tight">
+            <span className="hidden sm:block text-lg font-bold text-[#102A32] tracking-tight">
               MEHAK
-              <span className="text-[#cf5c36]">
+              <span className="text-[#5DEBE2]">
                 AKRAM
               </span>
             </span>
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-2 bg-white/[0.03] border border-white/10 rounded-2xl p-2 backdrop-blur-xl">
+          <div className="hidden md:flex items-center gap-2 bg-white/85 border border-[#102A32]/10 rounded-2xl p-2 backdrop-blur-xl">
             {navLinks.map(
               (link) => {
                 const isActive =
@@ -113,14 +113,14 @@ export default function Navbar() {
                       }}
                       className={`relative px-5 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
                         isActive
-                          ? "text-white"
-                          : "text-slate-400 hover:text-white"
+                          ? "text-[#102A32]"
+                          : "text-[#102A32]/75 hover:text-[#5DEBE2]"
                       }`}
                     >
                       {isActive && (
                         <motion.div
                           layoutId="navbar-pill"
-                          className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#cf5c36]/20 to-[#d97652]/10 border border-[#cf5c36]/20"
+                          className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#5DEBE2]/20 to-[#5DEBE2]/10 border border-[#5DEBE2]/20"
                           transition={{
                             type: "spring",
                             stiffness: 350,
@@ -155,7 +155,7 @@ export default function Navbar() {
                 whileTap={{
                   scale: 0.96,
                 }}
-                className="px-6 py-3 rounded-2xl text-sm font-semibold text-white bg-gradient-to-r from-[#cf5c36] to-[#d97652] shadow-lg shadow-[#cf5c36]/20 hover:shadow-[#cf5c36]/40 transition-all duration-300"
+                className="px-6 py-3 rounded-2xl text-sm font-semibold text-[#102A32] bg-gradient-to-r from-[#5DEBE2] to-[#5DEBE2] shadow-lg shadow-[#5DEBE2]/20 hover:shadow-[#5DEBE2]/40 transition-all duration-300"
               >
                 Let's Talk
               </motion.button>
@@ -168,7 +168,7 @@ export default function Navbar() {
                   !isMenuOpen
                 )
               }
-              className="md:hidden relative z-[120] w-12 h-12 rounded-2xl border border-white/10 bg-white/[0.04] backdrop-blur-xl flex flex-col items-center justify-center gap-1.5"
+              className="md:hidden relative z-[120] w-12 h-12 rounded-2xl border border-[#102A32]/10 bg-white backdrop-blur-xl flex flex-col items-center justify-center gap-1.5"
             >
               <motion.span
                 animate={{
@@ -181,7 +181,7 @@ export default function Navbar() {
                       ? 8
                       : 0,
                 }}
-                className="w-6 h-0.5 bg-white rounded-full"
+                className="w-6 h-0.5 bg-[#102A32] rounded-full"
               />
 
               <motion.span
@@ -191,7 +191,7 @@ export default function Navbar() {
                       ? 0
                       : 1,
                 }}
-                className="w-6 h-0.5 bg-white rounded-full"
+                className="w-6 h-0.5 bg-[#102A32] rounded-full"
               />
 
               <motion.span
@@ -205,7 +205,7 @@ export default function Navbar() {
                       ? -8
                       : 0,
                 }}
-                className="w-6 h-0.5 bg-white rounded-full"
+                className="w-6 h-0.5 bg-[#102A32] rounded-full"
               />
             </button>
           </div>
@@ -231,7 +231,7 @@ export default function Navbar() {
             transition={{
               duration: 0.3,
             }}
-            className="fixed inset-0 bg-black/70 backdrop-blur-2xl z-[110] md:hidden px-6 pt-32"
+            className="fixed inset-0 bg-[#102A32]/90 backdrop-blur-2xl z-[110] md:hidden px-6 pt-32"
           >
             <div className="space-y-4">
               {navLinks.map(
@@ -260,8 +260,8 @@ export default function Navbar() {
                         }}
                         className={`rounded-3xl p-5 border backdrop-blur-xl transition-all duration-300 ${
                           isActive
-                            ? "bg-white/10 border-[#cf5c36]/20 text-white"
-                            : "bg-white/[0.03] border-white/10 text-slate-400 hover:text-white"
+                            ? "bg-[#EAF8F7] border-[#5DEBE2]/20 text-[#102A32]"
+                          : "bg-white border-[#102A32]/10 text-[#102A32] hover:text-[#5DEBE2]"
                         }`}
                       >
                         <span className="text-xl font-semibold">
@@ -287,7 +287,7 @@ export default function Navbar() {
                   whileTap={{
                     scale: 0.97,
                   }}
-                  className="w-full mt-6 py-4 rounded-3xl bg-gradient-to-r from-[#cf5c36] to-[#d97652] text-white text-lg font-semibold shadow-xl shadow-[#cf5c36]/20"
+                  className="w-full mt-6 py-4 rounded-3xl bg-gradient-to-r from-[#5DEBE2] to-[#5DEBE2] text-[#102A32] text-lg font-semibold shadow-xl shadow-[#5DEBE2]/20"
                 >
                   Let's Talk
                 </motion.button>

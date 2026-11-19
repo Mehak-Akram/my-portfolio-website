@@ -33,9 +33,9 @@ const Testimonials = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl md:text-5xl font-bold text-white mb-4"
+            className="text-4xl md:text-5xl font-bold text-[#102A32] mb-4"
           >
-            What People <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#cf5c36] to-[#d97652]">Say</span>
+            What People <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5DEBE2] to-[#5DEBE2]">Say</span>
           </motion.h2>
         </div>
 
@@ -48,15 +48,15 @@ const Testimonials = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.6 }}
-              className="cursor-hover group glass rounded-3xl p-8 transition-all duration-300 hover:bg-white/5"
+              className="cursor-hover group glass rounded-3xl p-8 transition-all duration-300 hover:bg-[#F5FBFA]"
             >
-              <FaQuoteLeft className="text-[#cf5c36] text-3xl mb-6 opacity-50" />
-              <p className="text-slate-400 italic mb-8 leading-relaxed">
+              <FaQuoteLeft className="text-[#5DEBE2] text-3xl mb-6 opacity-50" />
+              <p className="text-[#102A32]/75 italic mb-8 leading-relaxed">
                 "{review.text}"
               </p>
-              <div className="pt-6 border-t border-white/10">
-                <h4 className="text-white font-bold mb-1">{review.name}</h4>
-                <p className="text-[#cf5c36] text-sm">{review.role}</p>
+              <div className="pt-6 border-t border-[#102A32]/10">
+                <h4 className="text-[#102A32] font-bold mb-1">{review.name}</h4>
+                <p className="text-[#5DEBE2] text-sm">{review.role}</p>
               </div>
             </motion.div>
           ))}

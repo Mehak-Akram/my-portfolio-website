@@ -45,19 +45,19 @@ const Contact = () => {
       name: "LinkedIn",
       icon: <FaLinkedinIn />,
       href: "https://www.linkedin.com/in/mehak-akram-3859a830b?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-      color: "hover:text-[#0077b5]",
+      color: "hover:text-[#5DEBE2]",
     },
     {
       name: "GitHub",
       icon: <FaGithub />,
       href: "https://github.com/Mehak-Akram",
-      color: "hover:text-white",
+      color: "hover:text-[#5DEBE2]",
     },
     {
       name: "Twitter",
       icon: <FaTwitter />,
       href: "https://x.com/MehakAkram597",
-      color: "hover:text-[#1DA1F2]",
+      color: "hover:text-[#5DEBE2]",
     },
   ];
 
@@ -71,10 +71,10 @@ const Contact = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden py-32 bg-[#060606] text-slate-200" id="contact">
+    <section className="relative overflow-hidden py-32 bg-[#FFFFFF] text-[#102A32]" id="contact">
       {/* Background Glows */}
-      <div className="absolute top-[-150px] left-[-120px] w-[450px] h-[450px] bg-[#cf5c36]/20 blur-[140px] rounded-full" />
-      <div className="absolute bottom-[-180px] right-[-120px] w-[450px] h-[450px] bg-[#cf5c36]/10 blur-[150px] rounded-full" />
+      <div className="absolute top-[-150px] left-[-120px] w-[450px] h-[450px] bg-[#5DEBE2]/20 blur-[140px] rounded-full" />
+      <div className="absolute bottom-[-180px] right-[-120px] w-[450px] h-[450px] bg-[#5DEBE2]/10 blur-[150px] rounded-full" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* Header */}
@@ -86,10 +86,10 @@ const Contact = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-5xl md:text-7xl font-black text-white leading-[1.05] mb-6"
+            className="text-5xl md:text-7xl font-black text-[#102A32] leading-[1.05] mb-6"
           >
             Let's{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#cf5c36] to-[#d97652]">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5DEBE2] to-[#5DEBE2]">
               Connect
             </span>
           </motion.h2>
@@ -99,7 +99,7 @@ const Contact = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-xl text-slate-400 leading-relaxed"
+            className="text-xl text-[#102A32]/75 leading-relaxed"
           >
             Have a project in mind or just want to chat? I'd love to hear from
             you. Let's build something amazing together.
@@ -116,15 +116,15 @@ const Contact = () => {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="lg:col-span-7"
           >
-            <div className="group relative overflow-hidden rounded-[36px] border border-white/10 bg-white/[0.04] backdrop-blur-2xl p-8 md:p-12 transition-all duration-500 hover:shadow-[0_0_60px_rgba(207,92,54,0.15)]">
+            <div className="group relative overflow-hidden rounded-[36px] border border-[#5DEBE2]/20 bg-[#102A32] text-white backdrop-blur-2xl p-8 md:p-12 transition-all duration-500 hover:shadow-[0_0_60px_rgba(93,235,226,0.2)]">
               {/* Hover Glow */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-br from-[#cf5c36]/10 to-transparent transition-opacity duration-500" />
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-br from-[#5DEBE2]/10 to-transparent transition-opacity duration-500" />
 
               <div className="relative z-10">
                 <h3 className="text-3xl font-bold text-white mb-3">
                   Send Me a Message
                 </h3>
-                <p className="text-slate-400 mb-10 leading-relaxed">
+                <p className="text-white/75 mb-10 leading-relaxed">
                   Fill out the form below and I'll get back to you as soon as
                   possible.
                 </p>
@@ -135,7 +135,7 @@ const Contact = () => {
                     <div className="relative">
                       <label
                         htmlFor="name"
-                        className="block text-sm font-medium text-slate-300 mb-3"
+                        className="block text-sm font-medium text-white/80 mb-3"
                       >
                         Your Name
                       </label>
@@ -146,7 +146,7 @@ const Contact = () => {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        className="w-full px-5 py-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl text-white placeholder-slate-500 focus:outline-none focus:border-[#cf5c36]/50 focus:bg-white/10 transition-all duration-300"
+                        className="w-full px-5 py-4 rounded-2xl border border-white/15 bg-white text-[#102A32] placeholder-slate-500 focus:outline-none focus:border-[#5DEBE2] focus:ring-2 focus:ring-[#5DEBE2]/30 transition-all duration-300"
                         placeholder="your name"
                       />
                     </div>
@@ -154,7 +154,7 @@ const Contact = () => {
                     <div className="relative">
                       <label
                         htmlFor="email"
-                        className="block text-sm font-medium text-slate-300 mb-3"
+                        className="block text-sm font-medium text-white/80 mb-3"
                       >
                         Email Address
                       </label>
@@ -165,7 +165,7 @@ const Contact = () => {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="w-full px-5 py-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl text-white placeholder-slate-500 focus:outline-none focus:border-[#cf5c36]/50 focus:bg-white/10 transition-all duration-300"
+                        className="w-full px-5 py-4 rounded-2xl border border-white/15 bg-white text-[#102A32] placeholder-slate-500 focus:outline-none focus:border-[#5DEBE2] focus:ring-2 focus:ring-[#5DEBE2]/30 transition-all duration-300"
                         placeholder="name@example.com"
                       />
                     </div>
@@ -175,7 +175,7 @@ const Contact = () => {
                   <div>
                     <label
                       htmlFor="subject"
-                      className="block text-sm font-medium text-slate-300 mb-3"
+                      className="block text-sm font-medium text-white/80 mb-3"
                     >
                       Subject
                     </label>
@@ -186,7 +186,7 @@ const Contact = () => {
                       value={formData.subject}
                       onChange={handleChange}
                       required
-                      className="w-full px-5 py-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl text-white placeholder-slate-500 focus:outline-none focus:border-[#cf5c36]/50 focus:bg-white/10 transition-all duration-300"
+                      className="w-full px-5 py-4 rounded-2xl border border-white/15 bg-white text-[#102A32] placeholder-slate-500 focus:outline-none focus:border-[#5DEBE2] focus:ring-2 focus:ring-[#5DEBE2]/30 transition-all duration-300"
                       placeholder="Project Collaboration"
                     />
                   </div>
@@ -195,7 +195,7 @@ const Contact = () => {
                   <div>
                     <label
                       htmlFor="message"
-                      className="block text-sm font-medium text-slate-300 mb-3"
+                      className="block text-sm font-medium text-white/80 mb-3"
                     >
                       Message
                     </label>
@@ -206,7 +206,7 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       rows={6}
-                      className="w-full px-5 py-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl text-white placeholder-slate-500 focus:outline-none focus:border-[#cf5c36]/50 focus:bg-white/10 transition-all duration-300 resize-none"
+                      className="w-full px-5 py-4 rounded-2xl border border-white/15 bg-white text-[#102A32] placeholder-slate-500 focus:outline-none focus:border-[#5DEBE2] focus:ring-2 focus:ring-[#5DEBE2]/30 transition-all duration-300 resize-none"
                       placeholder="Tell me about your project..."
                     />
                   </div>
@@ -219,8 +219,8 @@ const Contact = () => {
                     whileTap={{ scale: 0.98 }}
                     className={`w-full px-8 py-5 rounded-2xl font-semibold transition-all duration-500 flex items-center justify-center gap-3 ${
                       isSuccess
-                        ? "bg-green-600 text-white"
-                        : "bg-gradient-to-r from-[#cf5c36] to-[#d97652] text-white hover:scale-105 hover:shadow-[0_20px_50px_rgba(207,92,54,0.4)]"
+                        ? "bg-[#5DEBE2] text-[#102A32]"
+                        : "bg-gradient-to-r from-[#5DEBE2] to-[#5DEBE2] text-[#102A32] hover:scale-105 hover:shadow-[0_20px_50px_rgba(93,235,226,0.4)]"
                     }`}
                   >
                     {isSubmitting ? (
@@ -232,7 +232,7 @@ const Contact = () => {
                             duration: 1,
                             ease: "linear",
                           }}
-                          className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full"
+                          className="w-5 h-5 border-2 border-white/30 border-t-[#5DEBE2] rounded-full"
                         />
                         Sending...
                       </>
@@ -270,20 +270,20 @@ const Contact = () => {
                 viewport={{ once: true }}
                 transition={{ delay: 0.5 + index * 0.1 }}
                 whileHover={{ y: -8 }}
-                className="group relative overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.04] backdrop-blur-2xl p-7 transition-all duration-500 hover:shadow-[0_0_60px_rgba(207,92,54,0.15)]"
+                className="group relative overflow-hidden rounded-[28px] border border-[#5DEBE2]/20 bg-[#102A32] text-white backdrop-blur-2xl p-7 transition-all duration-500 hover:shadow-[0_0_60px_rgba(93,235,226,0.18)]"
               >
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-br from-[#cf5c36]/10 to-transparent transition-opacity duration-500" />
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-br from-[#5DEBE2]/10 to-transparent transition-opacity duration-500" />
 
                 <div className="relative z-10 flex items-start gap-5">
-                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#cf5c36]/20 to-[#cf5c36]/5 border border-[#cf5c36]/20 flex items-center justify-center text-2xl text-[#cf5c36] flex-shrink-0">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#5DEBE2]/20 to-[#5DEBE2]/5 border border-[#5DEBE2]/20 flex items-center justify-center text-2xl text-[#5DEBE2] flex-shrink-0">
                     {info.icon}
                   </div>
 
                   <div>
-                    <p className="text-xs uppercase tracking-widest text-[#cf5c36] font-bold mb-2">
+                    <p className="text-xs uppercase tracking-widest text-[#5DEBE2] font-bold mb-2">
                       {info.label}
                     </p>
-                    <p className="text-slate-200 font-medium text-lg">
+                    <p className="text-white font-medium text-lg">
                       {info.value}
                     </p>
                   </div>
@@ -297,7 +297,7 @@ const Contact = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.7 }}
-              className="rounded-[28px] border border-white/10 bg-white/[0.04] backdrop-blur-2xl p-7"
+              className="rounded-[28px] border border-[#5DEBE2]/20 bg-[#102A32] text-white backdrop-blur-2xl p-7"
             >
               <h4 className="text-xl font-bold text-white mb-6">
                 Connect With Me
@@ -310,7 +310,7 @@ const Contact = () => {
                     href={social.href}
                     whileHover={{ y: -5, scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className={`flex-1 h-16 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl flex items-center justify-center text-white hover:bg-[#cf5c36]/20 transition-all duration-300 text-xl ${social.color}`}
+                    className={`flex-1 h-16 rounded-2xl border border-white/15 bg-white/5 backdrop-blur-xl flex items-center justify-center text-white hover:bg-[#5DEBE2] hover:text-[#102A32] transition-all duration-300 text-xl ${social.color}`}
                   >
                     {social.icon}
                   </motion.a>
@@ -324,15 +324,15 @@ const Contact = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.8 }}
-              className="rounded-[28px] border border-white/10 bg-white/[0.04] backdrop-blur-2xl p-7"
+              className="rounded-[28px] border border-[#5DEBE2]/20 bg-[#102A32] text-white backdrop-blur-2xl p-7"
             >
               <div className="flex items-center gap-3 mb-3">
-                <span className="w-3 h-3 rounded-full bg-green-500 animate-pulse"></span>
+                <span className="w-3 h-3 rounded-full bg-[#5DEBE2] animate-pulse"></span>
                 <p className="text-lg font-bold text-white">
                   Available for Work
                 </p>
               </div>
-              <p className="text-sm text-slate-400 leading-relaxed">
+              <p className="text-sm text-white/75 leading-relaxed">
                 I'm currently accepting new projects and collaborations. Let's
                 create something extraordinary.
               </p>

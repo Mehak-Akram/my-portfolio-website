@@ -73,11 +73,11 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="relative overflow-hidden w-full border-t border-white/5 pt-20 pb-10 px-6 bg-[#060606]">
+    <footer className="relative overflow-hidden w-full border-t border-white/10 pt-20 pb-10 px-6 bg-[#102A32] text-[#D1E5E3]">
       {/* SAME PREMIUM BACKGROUND */}
-      <div className="absolute top-[-150px] left-[-120px] w-[450px] h-[450px] bg-[#cf5c36]/20 blur-[140px] rounded-full pointer-events-none" />
+      <div className="absolute top-[-150px] left-[-120px] w-[450px] h-[450px] bg-[#5DEBE2]/20 blur-[140px] rounded-full pointer-events-none" />
 
-      <div className="absolute bottom-[-180px] right-[-120px] w-[450px] h-[450px] bg-[#cf5c36]/10 blur-[150px] rounded-full pointer-events-none" />
+      <div className="absolute bottom-[-180px] right-[-120px] w-[450px] h-[450px] bg-[#5DEBE2]/10 blur-[150px] rounded-full pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Main Footer Content */}
@@ -90,15 +90,15 @@ const Footer = () => {
             >
             
 
-              <span className="text-white font-bold tracking-tight text-lg">
+                  <span className="text-white font-bold tracking-tight text-lg">
                 MEHAK
-                <span className="text-[#cf5c36]">
+                <span className="text-[#5DEBE2]">
                   AKRAM
                 </span>
               </span>
             </Link>
 
-            <p className="text-slate-400 text-sm leading-relaxed max-w-md">
+            <p className="text-[#D1E5E3] text-sm leading-relaxed max-w-md">
               Building intelligent systems
               and modern web applications.
               Specializing in AI agents and
@@ -117,7 +117,7 @@ const Footer = () => {
                     aria-label={
                       social.label
                     }
-                    className="cursor-hover w-10 h-10 rounded-xl glass flex items-center justify-center text-slate-400 hover:text-[#cf5c36] hover:bg-white/10 transition-all duration-300"
+                    className="cursor-hover w-10 h-10 rounded-xl border border-white/10 bg-white/5 flex items-center justify-center text-[#5DEBE2] hover:text-[#102A32] hover:bg-[#5DEBE2] transition-all duration-300"
                   >
                     {social.icon}
                   </a>
@@ -137,9 +137,9 @@ const Footer = () => {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="cursor-hover text-slate-400 text-sm hover:text-[#cf5c36] transition-colors duration-300 inline-flex items-center gap-2 group"
+                    className="cursor-hover text-[#D1E5E3] text-sm hover:text-[#5DEBE2] transition-colors duration-300 inline-flex items-center gap-2 group"
                   >
-                    <span className="w-0 h-px bg-[#cf5c36] group-hover:w-4 transition-all duration-300" />
+                    <span className="w-0 h-px bg-[#5DEBE2] group-hover:w-4 transition-all duration-300" />
 
                     {link.name}
                   </Link>
@@ -154,27 +154,27 @@ const Footer = () => {
               Status
             </h4>
 
-            <div className="glass rounded-2xl p-4 space-y-3">
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-4 space-y-3">
               <div className="flex items-center justify-between">
-                <span className="text-xs text-slate-500">
+                <span className="text-xs text-[#D1E5E3]/75">
                   Local Time
                 </span>
 
-                <span className="text-xs text-slate-300 font-mono tabular-nums">
+                <span className="text-xs text-[#D1E5E3] font-mono tabular-nums">
                   {time}
                 </span>
               </div>
 
               <div className="flex items-center justify-between">
-                <span className="text-xs text-slate-500">
+                <span className="text-xs text-[#D1E5E3]/75">
                   Status
                 </span>
 
-                <span className="text-xs text-emerald-400 flex items-center gap-1.5">
+                <span className="text-xs text-[#5DEBE2] flex items-center gap-1.5">
                   <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#5DEBE2] opacity-75"></span>
 
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[#5DEBE2]"></span>
                   </span>
 
                   Available
@@ -182,11 +182,11 @@ const Footer = () => {
               </div>
 
               <div className="flex items-center justify-between">
-                <span className="text-xs text-slate-500">
+                <span className="text-xs text-[#D1E5E3]/75">
                   Location
                 </span>
 
-                <span className="text-xs text-slate-300">
+                <span className="text-xs text-[#D1E5E3]">
                   Karachi, PK
                 </span>
               </div>
@@ -195,14 +195,14 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-slate-500 text-sm text-center">
+        <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-[#D1E5E3]/75 text-sm text-center">
             © {currentYear} Mehak
             Akram.{" "}
              All rights reserved.
           </p>
 
-          <p className="text-slate-600 text-xs">
+          <p className="text-[#D1E5E3]/70 text-xs">
             Designed & Developed with
             passion
           </p>

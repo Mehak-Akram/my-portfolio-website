@@ -46,19 +46,19 @@ export default function Contact() {
       name: "LinkedIn",
       icon: <FaLinkedinIn />,
       href: "https://www.linkedin.com/in/mehak-akram-3859a830b?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-      color: "hover:text-[#0077b5]",
+      color: "hover:text-[#5DEBE2]",
     },
     {
       name: "GitHub",
       icon: <FaGithub />,
       href: "https://github.com/Mehak-Akram",
-      color: "hover:text-white",
+      color: "hover:text-[#5DEBE2]",
     },
     {
       name: "Twitter",
       icon: <FaTwitter />,
       href: "https://x.com/MehakAkram597",
-      color: "hover:text-[#1DA1F2]",
+      color: "hover:text-[#5DEBE2]",
     },
   ];
 
@@ -72,10 +72,10 @@ export default function Contact() {
   ];
 
   return (
-    <main className="relative min-h-screen overflow-hidden bg-[#060606] text-slate-200">
+    <main className="relative min-h-screen overflow-hidden bg-[#FFFFFF] text-[#102A32]">
       {/* Background Glows */}
-      <div className="absolute top-[-150px] left-[-120px] w-[450px] h-[450px] bg-[#cf5c36]/20 blur-[140px] rounded-full" />
-      <div className="absolute bottom-[-180px] right-[-120px] w-[450px] h-[450px] bg-[#cf5c36]/10 blur-[150px] rounded-full" />
+      <div className="absolute top-[-150px] left-[-120px] w-[450px] h-[450px] bg-[#5DEBE2]/20 blur-[140px] rounded-full" />
+      <div className="absolute bottom-[-180px] right-[-120px] w-[450px] h-[450px] bg-[#5DEBE2]/10 blur-[150px] rounded-full" />
 
       <section className="relative z-10 max-w-7xl mx-auto px-6 py-32">
         {/* Header */}
@@ -86,10 +86,10 @@ export default function Contact() {
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-5xl md:text-7xl font-black text-white leading-[1.05] mb-6"
+            className="text-5xl md:text-7xl font-black text-[#102A32] leading-[1.05] mb-6"
           >
             Let's{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#cf5c36] to-[#d97652]">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5DEBE2] to-[#5DEBE2]">
               Connect
             </span>
           </motion.h1>
@@ -98,7 +98,7 @@ export default function Contact() {
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-xl text-slate-400 leading-relaxed"
+            className="text-xl text-[#102A32]/75 leading-relaxed"
           >
             Have a project in mind or just want to chat? I'd love to hear from
             you. Let's build something amazing together.
@@ -114,15 +114,15 @@ export default function Contact() {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="lg:col-span-7"
           >
-            <div className="group relative overflow-hidden rounded-[36px] border border-white/10 bg-white/[0.04] backdrop-blur-2xl p-8 md:p-12 transition-all duration-500 hover:shadow-[0_0_60px_rgba(207,92,54,0.15)]">
+            <div className="group relative overflow-hidden rounded-[36px] border border-[#102A32]/10 bg-white backdrop-blur-2xl p-8 md:p-12 transition-all duration-500 hover:shadow-[0_0_60px_rgba(93,235,226,0.15)]">
               {/* Hover Glow */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-br from-[#cf5c36]/10 to-transparent transition-opacity duration-500" />
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-br from-[#5DEBE2]/10 to-transparent transition-opacity duration-500" />
 
               <div className="relative z-10">
-                <h2 className="text-3xl font-bold text-white mb-3">
+                <h2 className="text-3xl font-bold text-[#102A32] mb-3">
                   Send Me a Message
                 </h2>
-                <p className="text-slate-400 mb-10 leading-relaxed">
+                <p className="text-[#102A32]/75 mb-10 leading-relaxed">
                   Fill out the form below and I'll get back to you as soon as
                   possible.
                 </p>
@@ -136,7 +136,7 @@ export default function Contact() {
                     >
                       <label
                         htmlFor="name"
-                        className="block text-sm font-medium text-slate-300 mb-3"
+                        className="block text-sm font-medium text-[#102A32]/80 mb-3"
                       >
                         Your Name
                       </label>
@@ -147,7 +147,7 @@ export default function Contact() {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        className="w-full px-5 py-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl text-white placeholder-slate-500 focus:outline-none focus:border-[#cf5c36]/50 focus:bg-white/10 transition-all duration-300"
+                        className="w-full px-5 py-4 rounded-2xl border border-[#102A32]/10 bg-[#F5FBFA] backdrop-blur-xl text-[#102A32] placeholder-slate-500 focus:outline-none focus:border-[#5DEBE2]/50 focus:bg-[#EAF8F7] transition-all duration-300"
                         placeholder="your name"
                       />
                     </motion.div>
@@ -158,7 +158,7 @@ export default function Contact() {
                     >
                       <label
                         htmlFor="email"
-                        className="block text-sm font-medium text-slate-300 mb-3"
+                        className="block text-sm font-medium text-[#102A32]/80 mb-3"
                       >
                         Email Address
                       </label>
@@ -169,7 +169,7 @@ export default function Contact() {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="w-full px-5 py-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl text-white placeholder-slate-500 focus:outline-none focus:border-[#cf5c36]/50 focus:bg-white/10 transition-all duration-300"
+                        className="w-full px-5 py-4 rounded-2xl border border-[#102A32]/10 bg-[#F5FBFA] backdrop-blur-xl text-[#102A32] placeholder-slate-500 focus:outline-none focus:border-[#5DEBE2]/50 focus:bg-[#EAF8F7] transition-all duration-300"
                         placeholder="name@example.com"
                       />
                     </motion.div>
@@ -179,7 +179,7 @@ export default function Contact() {
                   <motion.div whileFocus={{ scale: 1.01 }}>
                     <label
                       htmlFor="subject"
-                      className="block text-sm font-medium text-slate-300 mb-3"
+                      className="block text-sm font-medium text-[#102A32]/80 mb-3"
                     >
                       Subject
                     </label>
@@ -190,7 +190,7 @@ export default function Contact() {
                       value={formData.subject}
                       onChange={handleChange}
                       required
-                      className="w-full px-5 py-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl text-white placeholder-slate-500 focus:outline-none focus:border-[#cf5c36]/50 focus:bg-white/10 transition-all duration-300"
+                      className="w-full px-5 py-4 rounded-2xl border border-[#102A32]/10 bg-[#F5FBFA] backdrop-blur-xl text-[#102A32] placeholder-slate-500 focus:outline-none focus:border-[#5DEBE2]/50 focus:bg-[#EAF8F7] transition-all duration-300"
                       placeholder="Project Collaboration"
                     />
                   </motion.div>
@@ -199,7 +199,7 @@ export default function Contact() {
                   <motion.div whileFocus={{ scale: 1.01 }}>
                     <label
                       htmlFor="message"
-                      className="block text-sm font-medium text-slate-300 mb-3"
+                      className="block text-sm font-medium text-[#102A32]/80 mb-3"
                     >
                       Message
                     </label>
@@ -210,7 +210,7 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       rows={6}
-                      className="w-full px-5 py-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl text-white placeholder-slate-500 focus:outline-none focus:border-[#cf5c36]/50 focus:bg-white/10 transition-all duration-300 resize-none"
+                      className="w-full px-5 py-4 rounded-2xl border border-[#102A32]/10 bg-[#F5FBFA] backdrop-blur-xl text-[#102A32] placeholder-slate-500 focus:outline-none focus:border-[#5DEBE2]/50 focus:bg-[#EAF8F7] transition-all duration-300 resize-none"
                       placeholder="Tell me about your project..."
                     />
                   </motion.div>
@@ -223,8 +223,8 @@ export default function Contact() {
                     whileTap={{ scale: 0.98 }}
                     className={`w-full px-8 py-5 rounded-2xl font-semibold transition-all duration-500 flex items-center justify-center gap-3 ${
                       isSuccess
-                        ? "bg-green-600 text-white"
-                        : "bg-gradient-to-r from-[#cf5c36] to-[#d97652] text-white hover:scale-105 hover:shadow-[0_20px_50px_rgba(207,92,54,0.4)]"
+                        ? "bg-[#5DEBE2] text-[#102A32]"
+                        : "bg-gradient-to-r from-[#5DEBE2] to-[#5DEBE2] text-[#102A32] hover:scale-105 hover:shadow-[0_20px_50px_rgba(93,235,226,0.4)]"
                     }`}
                   >
                     {isSubmitting ? (
@@ -236,7 +236,7 @@ export default function Contact() {
                             duration: 1,
                             ease: "linear",
                           }}
-                          className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full"
+                          className="w-5 h-5 border-2 border-[#102A32]/25 border-t-[#102A32] rounded-full"
                         />
                         Sending...
                       </>
@@ -272,20 +272,20 @@ export default function Contact() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5 + index * 0.1 }}
                 whileHover={{ y: -8 }}
-                className="group relative overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.04] backdrop-blur-2xl p-7 transition-all duration-500 hover:shadow-[0_0_60px_rgba(207,92,54,0.15)]"
+                className="group relative overflow-hidden rounded-[28px] border border-[#102A32]/10 bg-white backdrop-blur-2xl p-7 transition-all duration-500 hover:shadow-[0_0_60px_rgba(93,235,226,0.15)]"
               >
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-br from-[#cf5c36]/10 to-transparent transition-opacity duration-500" />
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-br from-[#5DEBE2]/10 to-transparent transition-opacity duration-500" />
 
                 <div className="relative z-10 flex items-start gap-5">
-                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#cf5c36]/20 to-[#cf5c36]/5 border border-[#cf5c36]/20 flex items-center justify-center text-2xl text-[#cf5c36] flex-shrink-0">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#5DEBE2]/20 to-[#5DEBE2]/5 border border-[#5DEBE2]/20 flex items-center justify-center text-2xl text-[#5DEBE2] flex-shrink-0">
                     {info.icon}
                   </div>
 
                   <div>
-                    <p className="text-xs uppercase tracking-widest text-[#cf5c36] font-bold mb-2">
+                    <p className="text-xs uppercase tracking-widest text-[#5DEBE2] font-bold mb-2">
                       {info.label}
                     </p>
-                    <p className="text-slate-200 font-medium text-lg">
+                    <p className="text-[#102A32] font-medium text-lg">
                       {info.value}
                     </p>
                   </div>
@@ -298,9 +298,9 @@ export default function Contact() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7 }}
-              className="rounded-[28px] border border-white/10 bg-white/[0.04] backdrop-blur-2xl p-7"
+              className="rounded-[28px] border border-[#102A32]/10 bg-white backdrop-blur-2xl p-7"
             >
-              <h3 className="text-xl font-bold text-white mb-6">
+              <h3 className="text-xl font-bold text-[#102A32] mb-6">
                 Connect With Me
               </h3>
 
@@ -311,7 +311,7 @@ export default function Contact() {
                     href={social.href}
                     whileHover={{ y: -5, scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className={`flex-1 h-16 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl flex items-center justify-center text-white hover:bg-[#cf5c36]/20 transition-all duration-300 text-xl ${social.color}`}
+                    className={`flex-1 h-16 rounded-2xl border border-[#102A32]/10 bg-[#F5FBFA] backdrop-blur-xl flex items-center justify-center text-[#102A32] hover:bg-[#5DEBE2]/20 transition-all duration-300 text-xl ${social.color}`}
                   >
                     {social.icon}
                   </motion.a>
@@ -324,15 +324,15 @@ export default function Contact() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8 }}
-              className="rounded-[28px] border border-white/10 bg-white/[0.04] backdrop-blur-2xl p-7"
+              className="rounded-[28px] border border-[#102A32]/10 bg-white backdrop-blur-2xl p-7"
             >
               <div className="flex items-center gap-3 mb-3">
-                <span className="w-3 h-3 rounded-full bg-green-500 animate-pulse"></span>
-                <p className="text-lg font-bold text-white">
+                <span className="w-3 h-3 rounded-full bg-[#5DEBE2] animate-pulse"></span>
+                <p className="text-lg font-bold text-[#102A32]">
                   Available for Work
                 </p>
               </div>
-              <p className="text-sm text-slate-400 leading-relaxed">
+              <p className="text-sm text-[#102A32]/75 leading-relaxed">
                 I'm currently accepting new projects and collaborations. Let's
                 create something extraordinary.
               </p>
@@ -345,26 +345,26 @@ export default function Contact() {
           initial={{ opacity: 0, y: 35 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="rounded-[40px] border border-white/10 bg-white/[0.04] backdrop-blur-2xl p-12 md:p-16 text-center"
+          className="rounded-[40px] border border-[#102A32]/10 bg-white backdrop-blur-2xl p-12 md:p-16 text-center"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-5">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#102A32] mb-5">
             Ready to Start Your Project?
           </h2>
 
-          <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p className="text-lg text-[#102A32]/75 max-w-2xl mx-auto mb-10 leading-relaxed">
             Whether you need a cutting-edge AI solution or a modern web
             application, I'm here to help turn your vision into reality.
           </p>
 
           <div className="flex flex-wrap gap-5 justify-center">
             <a href="/portfolio">
-              <button className="px-8 py-5 rounded-2xl border border-white/10 bg-white/[0.04] backdrop-blur-xl text-white font-semibold hover:bg-white/10 transition-all duration-300">
+              <button className="px-8 py-5 rounded-2xl border border-[#102A32]/10 bg-white backdrop-blur-xl text-[#102A32] font-semibold hover:bg-[#EAF8F7] transition-all duration-300">
                 View My Work
               </button>
             </a>
 
             <a href="/services">
-              <button className="group px-8 py-5 rounded-2xl bg-gradient-to-r from-[#cf5c36] to-[#d97652] text-white font-semibold transition-all duration-500 hover:scale-105 hover:shadow-[0_20px_50px_rgba(207,92,54,0.4)] flex items-center gap-3">
+              <button className="group px-8 py-5 rounded-2xl bg-gradient-to-r from-[#5DEBE2] to-[#5DEBE2] text-[#102A32] font-semibold transition-all duration-500 hover:scale-105 hover:shadow-[0_20px_50px_rgba(93,235,226,0.4)] flex items-center gap-3">
                 Explore Services
                 <FaPaperPlane className="group-hover:translate-x-1 transition-transform" />
               </button>

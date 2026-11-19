@@ -83,13 +83,13 @@ const Skills = () => {
 
   return (
     <section
-      className="relative overflow-hidden py-32 bg-[#060606] text-slate-200"
+      className="relative overflow-hidden py-32 bg-[#FFFFFF] text-[#102A32]"
       id="skills"
     >
       {/* SAME BACKGROUND AS ABOUT */}
-      <div className="absolute top-[-150px] left-[-120px] w-[450px] h-[450px] bg-[#cf5c36]/20 blur-[140px] rounded-full" />
+      <div className="absolute top-[-150px] left-[-120px] w-[450px] h-[450px] bg-[#5DEBE2]/20 blur-[140px] rounded-full" />
 
-      <div className="absolute bottom-[-180px] right-[-120px] w-[450px] h-[450px] bg-[#cf5c36]/10 blur-[150px] rounded-full" />
+      <div className="absolute bottom-[-180px] right-[-120px] w-[450px] h-[450px] bg-[#5DEBE2]/10 blur-[150px] rounded-full" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* HEADER */}
@@ -100,10 +100,10 @@ const Skills = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-5xl md:text-7xl font-black text-white leading-[1.05] mb-6"
+            className="text-5xl md:text-7xl font-black text-[#102A32] leading-[1.05] mb-6"
           >
             My{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#cf5c36] to-[#d97652]">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5DEBE2] to-[#5DEBE2]">
               Tech Stack
             </span>
           </motion.h2>
@@ -124,10 +124,10 @@ const Skills = () => {
               whileHover={{
                 y: -15,
               }}
-              className="group relative overflow-hidden rounded-[36px] border border-white/10 bg-white/[0.04] backdrop-blur-2xl p-8 min-h-[450px] flex flex-col transition-all duration-500 hover:shadow-[0_0_60px_rgba(207,92,54,0.15)]"
+              className="group relative overflow-hidden rounded-[36px] border border-[#5DEBE2]/20 bg-[#102A32] text-white backdrop-blur-2xl p-8 min-h-[450px] flex flex-col transition-all duration-500 hover:shadow-[0_0_60px_rgba(93,235,226,0.2)]"
             >
               {/* Hover Glow */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-br from-[#cf5c36]/10 to-transparent transition-opacity duration-500" />
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-br from-[#5DEBE2]/10 to-transparent transition-opacity duration-500" />
 
               <div className="relative z-10 flex flex-col h-full">
                 {/* CARD HEADER */}
@@ -137,7 +137,7 @@ const Skills = () => {
                       rotate: 8,
                       scale: 1.08,
                     }}
-                    className="w-16 h-16 rounded-[22px] bg-gradient-to-br from-[#cf5c36]/20 to-[#cf5c36]/5 border border-[#cf5c36]/20 flex items-center justify-center text-2xl text-[#cf5c36]"
+                    className="w-16 h-16 rounded-[22px] bg-gradient-to-br from-[#5DEBE2]/20 to-[#5DEBE2]/5 border border-[#5DEBE2]/20 flex items-center justify-center text-2xl text-[#5DEBE2]"
                   >
                     {group.icon}
                   </motion.div>
@@ -156,19 +156,19 @@ const Skills = () => {
                         x: 6,
                         scale: 1.02,
                       }}
-                      className="flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-5 py-4 hover:bg-[#cf5c36]/10 transition-all duration-300"
+                      className="flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-5 py-4 hover:bg-[#5DEBE2]/10 transition-all duration-300"
                     >
                       <div className="flex items-center gap-4">
-                        <div className="text-2xl text-[#cf5c36]">
+                        <div className="text-2xl text-[#5DEBE2]">
                           {skill.icon}
                         </div>
 
-                        <span className="font-medium text-slate-200">
+                        <span className="font-medium text-white">
                           {skill.name}
                         </span>
                       </div>
 
-                      <span className="text-sm text-slate-500">
+                      <span className="text-sm text-white/60">
                         {skill.level}
                       </span>
                     </motion.div>

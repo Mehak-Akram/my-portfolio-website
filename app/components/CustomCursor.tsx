@@ -39,7 +39,7 @@ export default function CustomCursor() {
     <>
       {/* Main cursor dot */}
       <motion.div
-        className="fixed top-0 left-0 w-3 h-3 bg-[#cf5c36] rounded-full pointer-events-none z-[9999] mix-blend-screen"
+        className="fixed top-0 left-0 w-3 h-3 bg-[#5DEBE2] rounded-full pointer-events-none z-[9999] mix-blend-screen"
         animate={{
           x: mousePosition.x - 6,
           y: mousePosition.y - 6,
@@ -55,7 +55,7 @@ export default function CustomCursor() {
 
       {/* Outer glow ring */}
       <motion.div
-        className="fixed top-0 left-0 w-10 h-10 border-2 border-[#cf5c36]/40 rounded-full pointer-events-none z-[9998]"
+        className="fixed top-0 left-0 w-10 h-10 border-2 border-[#5DEBE2]/40 rounded-full pointer-events-none z-[9998]"
         animate={{
           x: mousePosition.x - 20,
           y: mousePosition.y - 20,
@@ -71,7 +71,7 @@ export default function CustomCursor() {
 
       {/* Soft glow effect */}
       <motion.div
-        className="fixed top-0 left-0 w-32 h-32 bg-[#cf5c36]/10 rounded-full pointer-events-none z-[9997] blur-2xl"
+        className="fixed top-0 left-0 w-32 h-32 bg-[#5DEBE2]/10 rounded-full pointer-events-none z-[9997] blur-2xl"
         animate={{
           x: mousePosition.x - 64,
           y: mousePosition.y - 64,
