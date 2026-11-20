@@ -123,7 +123,7 @@ const Portfolio = () => {
         </div>
 
         {/* PROJECTS */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mb-28">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 lg:gap-6 mb-24 items-stretch">
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -140,64 +140,71 @@ const Portfolio = () => {
                 duration: 0.6,
                 delay: index * 0.1,
               }}
-              whileHover={{
-                y: -15,
-              }}
-              className="group relative overflow-hidden rounded-[36px] border border-[#5DEBE2]/20 bg-[#102A32] text-white backdrop-blur-2xl p-8 min-h-[450px] flex flex-col transition-all duration-500 hover:shadow-[0_0_60px_rgba(93,235,226,0.2)]"
+              whileHover={{ y: -6 }}
+              className="group relative flex min-h-[400px] flex-col overflow-hidden rounded-[28px] border border-[#102A32]/10 bg-white p-6 shadow-[0_14px_40px_rgba(16,42,50,0.06)] transition-all duration-300 hover:border-[#5DEBE2]/70 hover:shadow-[0_22px_50px_rgba(16,42,50,0.12)] sm:p-7 lg:min-h-[430px]"
             >
-              {/* Hover Glow */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-br from-[#5DEBE2]/10 to-transparent transition-opacity duration-500" />
+              <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#5DEBE2] to-[#5DEBE2]/15 opacity-80 transition-opacity duration-300 group-hover:opacity-100" />
 
-              <div className="relative z-10 flex flex-col h-full">
-                {/* TOP */}
-                <div className="flex justify-between items-start mb-8">
-                  <span className="px-4 py-2 rounded-full text-sm bg-[#5DEBE2]/10 border border-[#5DEBE2]/30 text-[#5DEBE2]">
+              <div className="relative z-10 flex flex-1 flex-col">
+                <div className="mb-7 flex items-start justify-between gap-4">
+                  <span className="rounded-full border border-[#5DEBE2]/40 bg-[#5DEBE2]/15 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.12em] text-[#102A32]">
                     {project.status}
                   </span>
 
-                  <div className="flex gap-3">
+                  <div className="flex gap-2">
                     <a
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-11 h-11 rounded-xl border border-white/15 bg-white/5 flex items-center justify-center text-white/75 hover:text-[#102A32] hover:bg-[#5DEBE2] transition-all"
+                      aria-label={`View ${project.title} on GitHub`}
+                      className="flex h-9 w-9 items-center justify-center rounded-full border border-[#102A32]/10 text-sm text-[#102A32]/65 transition-all duration-300 hover:border-[#5DEBE2] hover:bg-[#5DEBE2]/15 hover:text-[#102A32]"
                     >
                       <FaGithub />
                     </a>
-
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-11 h-11 rounded-xl border border-white/15 bg-white/5 flex items-center justify-center text-white/75 hover:text-[#102A32] hover:bg-[#5DEBE2] transition-all"
-                    >
-                      <FaExternalLinkAlt />
-                    </a>
+                    {project.demo && (
+                      <a
+                        href={project.demo.startsWith("http") ? project.demo : `https://${project.demo}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`Open ${project.title} live demo`}
+                        className="flex h-9 w-9 items-center justify-center rounded-full border border-[#102A32]/10 text-sm text-[#102A32]/65 transition-all duration-300 hover:border-[#5DEBE2] hover:bg-[#5DEBE2]/15 hover:text-[#102A32]"
+                      >
+                        <FaExternalLinkAlt className="text-xs" />
+                      </a>
+                    )}
                   </div>
                 </div>
 
-                {/* CONTENT */}
                 <div className="flex-1">
-                  <h3 className="text-3xl font-bold text-white mb-4 group-hover:text-[#5DEBE2] transition-colors duration-300">
+                  <h3 className="mb-4 text-[1.45rem] font-semibold leading-[1.2] tracking-[-0.035em] text-[#102A32] transition-colors duration-300 group-hover:text-[#17434c] sm:text-[1.6rem]">
                     {project.title}
                   </h3>
 
-                  <p className="text-white/75 leading-relaxed text-base mb-8">
+                  <p className="mb-7 text-sm leading-6 text-[#102A32]/70 sm:text-[15px] sm:leading-[1.7]">
                     {project.description}
                   </p>
                 </div>
 
-                {/* TAGS */}
-                <div className="flex flex-wrap gap-3 mt-auto">
+                <div className="flex flex-wrap items-center gap-2 pr-12">
                   {project.tags.map((tag, i) => (
                     <span
                       key={i}
-                      className="rounded-xl border border-white/15 bg-white/5 px-4 py-2 text-sm text-white/80 hover:bg-[#5DEBE2]/15 hover:text-white transition-all duration-300"
+                      className="rounded-full border border-[#5DEBE2]/35 bg-[#5DEBE2]/15 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-wide text-[#102A32]/80 transition-colors duration-200 hover:border-[#5DEBE2] hover:bg-[#5DEBE2]/30"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
+
+                <a
+                  href={project.demo ? (project.demo.startsWith("http") ? project.demo : `https://${project.demo}`) : project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Open ${project.title}`}
+                  className="absolute bottom-0 right-0 flex h-12 w-12 items-center justify-center rounded-full bg-[#102A32] text-lg text-white transition-all duration-300 hover:scale-105 hover:bg-[#5DEBE2] hover:text-[#102A32] group-hover:rotate-[-35deg]"
+                >
+                  <FaArrowRight />
+                </a>
               </div>
             </motion.div>
           ))}

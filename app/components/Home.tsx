@@ -140,7 +140,7 @@ export default function Home() {
         </div>
 
         {/* CAREER */}
-        <section>
+        <section id="career">
           <div className="flex items-center gap-4 mb-10">
             <h2 className="text-sm uppercase tracking-[0.25em] text-[#102A32]/65 font-semibold">
               Career Journey
